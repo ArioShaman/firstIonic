@@ -5,5 +5,9 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>Gallery</h2>
+
+  <div class="box" *ngFor="let box of boxes" (click)="itemTapped(box)">
+    <img [src]="box.link">
+  </div>  
 </ion-content>
